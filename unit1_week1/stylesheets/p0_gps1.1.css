@@ -1,0 +1,41 @@
+/* Jacob Persing
+this is the css file for my first guided-pairing session*/
+        h1 { 
+          color: mediumblue;
+          text-decoration: underline;
+        }
+        
+        h2 {
+          color: mediumblue;
+          text-decoration: underline;
+        }
+        
+        .bold { 
+          font-weight: bold;
+          color: cadetblue;
+        }
+        
+        .emphasize {
+          font-style: italic;
+        }
+        
+        .bolder {
+          font-weight: bold;
+        }
+        
+        h3 {
+          text-decoration: underline;
+          color: cadetblue;
+        }
+        
+        #goals_list {
+          text-align: left;
+        }
+        
+        .box {
+          border: 1px dashed black;
+          text-align:center;
+          border-radius:10%;
+        }
+        
+    
