@@ -89,6 +89,7 @@ p {
 
 #gen_info{
 	display:block;
+	position:relative;
 	float:right;
 	max-width:74%;
 }
