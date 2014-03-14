@@ -8,7 +8,7 @@ header{
 	height:150px;
 	background-color:rgb(141, 151, 155);
 	margin-top:20px;
-	font-size:30px;
+	font-size:20px;
 }
 
 li {
@@ -89,7 +89,6 @@ p {
 
 #gen_info{
 	display:block;
-	position:relative;
 	float:right;
 	max-width:74%;
 }
@@ -112,8 +111,8 @@ p {
 
 #myself{
 	border:3px solid papayawhip;
-	margin:-130px 0 0 50px;
 	width:120px;
+	margin-top:-90px;
 	height:auto;
 	float:left;
 	display:inline;
