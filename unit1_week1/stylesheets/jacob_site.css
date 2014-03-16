@@ -91,6 +91,7 @@ p {
 #gen_info{
 	display:block;
 	float:right;
+	min-width: 50%;
 	max-width:74%;
 }
 
@@ -98,8 +99,9 @@ p {
 	padding-left:-10px;
 	display:inline-block;
 	max-width:30%;
+	min-width:25%;
 	background-color:lightgrey;
-	height:250px;
+	max-height:20%;
 }
 
 #family1 {
