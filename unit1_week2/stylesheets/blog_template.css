@@ -1,7 +1,7 @@
 body{
 	min-width:330px;
 	max-width:100%;
-	background-image:url("../images/background.jpg");
+	background-image:url("../../unit1_week1/images/background.jpg");
 	color:white;
 	background-repeat:horizontal;
 }
@@ -38,15 +38,6 @@ h2{
 	text-decoration:underline;
 }
 
-table{
-	text-align:center;
-	background-color:darkgrey;
-	border:4px solid white;
-}
-
-tr, td{
-	border:4px solid white;
-}
 
 footer{
 	background-color:lightgrey;
@@ -71,8 +62,6 @@ p {
 
 .sec {
 	clear:both;
-	border:2px solid black;
-	border-radius:2%;
 	text-align:left;
 	display:block;
 	max-width:100%;
@@ -89,16 +78,16 @@ p {
 	list-style-type:none;
 	text-decoration: none;
 }
+
+#blog_content{
+	max-width:74%;
+	float:right;
+}
 #email{
 	color:grey;
 }
 
-#gen_info{
-	display:block;
-	float:right;
-	min-width: 50%;
-	max-width:74%;
-}
+
 
 #site_nav{
 	padding-left:-10px;
@@ -109,13 +98,6 @@ p {
 	max-height:20%;
 }
 
-#family1 {
-	position:relative;
-	left:25%;
-	border: 3px solid papayawhip;
-	max-width:480px;
-	max-height:360px;
-}
 
 #myself{
 	border:3px solid papayawhip;
