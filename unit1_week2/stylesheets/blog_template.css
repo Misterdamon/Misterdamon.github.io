@@ -81,11 +81,14 @@ p {
 }
 
 #blog_content{
-	min-width: 70%;
+	margin-top:1em;
+	background-color: darkgrey;
+	min-width: 74%;
 	max-width:74%;
 	float:right;
 	text-align:center;
 	display:inline;
+	border: 1px solid white;
 }
 
 #email{

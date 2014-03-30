@@ -24,6 +24,19 @@
 					</li>
 				</ul>
 			</div>
+
+				<section id = "blog_content">
+					<h2> March 29th, 2014 </h2>
+					<h2> Arrays vs. Hashes - When to use them and why </h2>
+					<p> Hey everyone, </br> </br> I'd like to take a moment to talk about Hashes and Arrays in Ruby programming. I'll do my best to explain what they are, and when and why we use them in programming. First, let me explain what they are. Arrays and Hashes are indexed data structures that keep track of information by storing it in a way that can be accessed by a certain index value. 
+					<h3>Arrays</h3>
+					With Arrays, this index is an integer value, and if you wanted to access a certain element in the array, all you would have to do is put in the specific numeric index that element. In general, you would use an array to store information that you want to be ordered with integer indices, for example, if you had an bunch of test scores that you wanted to store and manipulate and didn't care about which score belonged to which person. Arrays are generally less efficient than Hashes because in order to access a value, you much iterate sequentially across all elements in the array, whereas with a hash you only need to iterate until you reach the element that you are looking for. 
+					</p>
+					<h3>Hashes </h3>
+					<p>
+						In Ruby, hashes are collections of data that are stored based on key/value pairs, where the key is the index by which the elements are accessed. The key can be any type of object, instead of just an integer, as is the case with arrays. In comparison, Hashes are more efficient than arrays because looking up values is much faster when you don't have to search through each value in the data structure just to find the value you were looking for. Hashes are best used when you have a large collection of data that you want to be ordered in a particular way. For example, if you wanted to store the data for an address, you could make a hash key with a string "address" and store the address as the corresponding value for that key. This makes it much easier to understand than if you only had an integer value to tell you where you data is, like in an array.
+					</p>
+				</section>
 			
 				<section id = "blog_content">
 					<h2> March 21st, 2014 </h2>
@@ -50,6 +63,8 @@
 									Another major feature of why Javascript is so popular is AJAX (Asynchronous Javascript and XML). AJAX enables your webpages to request information from a server without having to leave or reload the page, which as you can imagine, makes user experience and overall page interaction much more enjoyable. 
 								</p>
 				</section>
+
+
 				
 				<div id="footdown" style="clear:both;"></div>
 				
