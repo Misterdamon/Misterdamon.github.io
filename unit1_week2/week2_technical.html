@@ -3,6 +3,7 @@
 <head>
 	<title>Technical Blog</title>
 	<link rel="stylesheet" href="stylesheets/blog_template.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<header id="site_header">
@@ -24,6 +25,30 @@
 					</li>
 				</ul>
 			</div>
+
+				<section id = "blog_content">
+				<h2> April 5th, 2014 </h2>
+				<h2> Enumerable#cycle - How and When to use it </h2>
+				<p> Hello! </p> </br> <p>Today's subject is the Ruby enumerable function: cycle. I'll do my best to explain what it is, and how and when to use it in a program. Basically, cycle is a function that will cycle through (no way! I never would have guessed :D) the object that it is called on based on the parameters that you give it. Cycle is best used when you have an object that needs to be iterated through, and you know exactly how many times you need to cycle through it. So lets say you have something like: </br></br>
+				<span>
+					[1,2,3].cycle do |x| </br>
+						puts x </br>
+					end
+				</span>
+				</p>
+				<p>
+				This code calls the block between do and end on each element in our [1,2,3] array. However, without passing in an argument to cycle, this code will also just repeat <span> 1 2 3 1 2 3 1 2 3 </span> forever because we didn't specify how many times to cycle. </br></br>
+				So What happens when we pass an argument into cycle? Lets find out: </br></br>
+				<span>[2,3,4,5].cycle(3) do |x| </br>
+					puts x * x </br>
+				end </br></br>
+				</span>
+				Since we passed a 3 in to our cycle function, it now knows how many times to iterate through each value in our array. So the resulting output would be:
+				<span> 4 9 16 25 4 9 16 25 4 9 16 25 </span>. While there are many other ways to accomplish this same task in ruby, cycle() is merely just one method completing it. It is similar to the #times loop except for that times does not automatically iterate through the object it is called on. 
+				</p>
+				<p> Well, hopefully that clarified things just a little bit for you guys, and hopefully you learned something new about the Enumerable function: cycle(). I hadn't previously used this function, so I certainly learned a lot from this! 
+				</p>
+				</section>
 
 				<section id = "blog_content">
 					<h2> March 29th, 2014 </h2>
