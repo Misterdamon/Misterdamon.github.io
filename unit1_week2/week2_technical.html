@@ -25,7 +25,35 @@
 					</li>
 				</ul>
 			</div>
+				<section id = "blog_content">
+				<h2> April 12th, 2014 </h2>
+				<h2> Ruby Classes - When, why and how to use them </h2>
+				<p> Salutations, friends! </p>
+				<p> So today I'm covering classes in Ruby, and will do my best to explain why we use them and how to implement them. First, classes are an important part of Object-Oriented Programming (OOP) that let us determine how to structure the data of our programs, and which methods have access to that data. Lets say, for instance, that we have a class definition like so: </br></br>
+				<span>
+					class MyAwesomeClass </br>
+						def initialize(parameter)</br>
+							@parameter = parameter</br>
+					  end</br></br>
 
+					  def say_hello</br>
+					  	puts @parameter</br>
+					  end</br>
+					end</br>
+
+					my_class = MyAwesomeClass.new("foo")</br>
+					my_class.say_hello</br>
+					your_class = MyAwesomeClass.new("bar")</br>
+					your_class.say_hello</br>
+
+				</span> </br> </p>
+				<p> Using this example, I'll try to explain why classes are useful for organizing program architecture and data encapsulation. Every time we declare a new instance of MyAwesomeClass, each instance will possess a method that intializes it based on the argument given, as well as a method called say_hello, which outputs the @parameter that I have given it. So on the last few lines of the example, I created an instance of MyAwesomeClass with the argument "foo", and assigned it to the variable "my_class". I did the same with the variable "your_class" but instead initialized it with the value "bar". Every instance of the class will have the same methods available to it, but the data contained in the class may be different based on the argument given in initialization. </p>
+
+				<p>In our example, the class method, "say_hello" accesses the instance variable, "@parameter" without having it passed in as an argument to the method. It can do this because with classes, an instance variable is accessible from anywhere within the class, or by any method within the class. So when we call say_hello on my_class, the output would be "foo" which is printed to the console; however, when we call say_hello on your_class, the output is "bar". This is because the different instances of the classes were initialized with different values.</p>
+
+				<p> Well, this is just a taste of what classes can do in Ruby, hopefully you all learned a little bit about implementing them, and why to implement them. So reiterate, classes are an important part of OOP because they allow us to organize our objects in a meaningful way, and allow us to manipulate objects based on what we want to do. That's all for today, good luck and happy coding! </p>
+
+				</section>
 				<section id = "blog_content">
 				<h2> April 5th, 2014 </h2>
 				<h2> Enumerable#cycle - How and When to use it </h2>
