@@ -97,7 +97,7 @@ p {
 }
 
 #gen_info{
-	display:block;
+	display:inline;
 	float:right;
 	max-width:73%;
 }
