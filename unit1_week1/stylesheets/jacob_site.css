@@ -1,16 +1,18 @@
 body{
-	min-width:330px;
+	min-width:570pxpx;
 	max-width:100%;
-	background-image:url("../images/background.jpg");
+	background-image:url("../images/congruent_outline.png");
 	color:white;
 	background-repeat:horizontal;
 }
 
 header{
-	height:150px;
+	height:200px;
 	background-color:rgb(141, 151, 155);
 	margin-top:20px;
 	font-size:20px;
+	border-top-right-radius: 25%;
+	border-top-left-radius: 25%;
 }
 
 li {
@@ -71,8 +73,9 @@ p {
 
 .sec {
 	clear:both;
-	border:2px solid black;
-	border-radius:2%;
+	border:2px solid grey;
+	border-top-right-radius: 10%;
+	border-top-left-radius: 10%;
 	text-align:left;
 	display:block;
 	max-width:100%;
@@ -96,8 +99,7 @@ p {
 #gen_info{
 	display:block;
 	float:right;
-	min-width: 50%;
-	max-width:74%;
+	max-width:73%;
 }
 
 #site_nav{
@@ -107,6 +109,8 @@ p {
 	min-width:25%;
 	background-color:lightgrey;
 	max-height:20%;
+	border-bottom-right-radius: 10%;
+	border-bottom-left-radius: 10%;
 }
 
 #family1 {
@@ -119,16 +123,17 @@ p {
 
 #myself{
 	border:3px solid papayawhip;
-	width:120px;
-	margin-top:-90px;
+	max-width:10%;
+	margin:-3.5em 0em 0em 2em;
 	height:auto;
 	float:left;
 	display:inline;
+	position: relative;
 }
 
 #header_text{
 	text-align:center;
-	padding-top:30px;
+	padding-top:1em;
 }
 
 #foot_ul{
