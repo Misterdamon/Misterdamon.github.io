@@ -47,6 +47,8 @@ footer{
 	background-color:lightgrey;
 	height:50px;
 	max-width:100%;
+	border-bottom-left-radius: 10%;
+	border-bottom-right-radius: 10%;
 }
 
 h5 {
