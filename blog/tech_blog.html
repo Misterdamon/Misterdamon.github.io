@@ -25,20 +25,40 @@
 					</li>
 				</ul>
 			</div>
-
 			<section id = "blog_content">
-			<h2> April 26th, 2014 </h2>
-			<h2> SQL Injection </h2>
-			<p> Hey guys! </p> </br>
-			<p> Today I'm taking a crack at explaining SQL injection, including what it is, why it is a problem, and how to avoid it. From what I've been reading, it seems as though SQL Injection is a common problem that is easily avoidable, but entirely too common at the same time. First, let me explain what it is. SQL Injection (SQLI) is a database attack that exploits a site or application that uses dynamic queries that utilize user input. SQL injection is the practice of inserting SQL statements through user input, and they can be catastrophic. An attacker can delete/modify/copy contents of a database simply by inserting a harmful SQL statement to the database. Depending on the vulnerability of the site being attacked, a hacker would be able to gain access to sensitive database information, including usernames, passwords, etc... 
-			</p>
-			<p> In terms of difficulty, SQL injection is one of the simplest to perform because of a few key reasons: 1) SQL injection vulnerabilities are extremely common, and hackers find targets by scanning websites for these vulnerabilities, and often choose their targets by the attractiveness of the data contained in the databases. (i.e. usernames, passwords, credit card info, etc...) 2) The hack procedure is well-documented and there are many resources that hackers can use to figure out how to perform an SQL injection. Furthermore, data extraction is not the only danger of an SQL attack, a hacker can actually change lots of site information, including replacing the home screen of a site with a malicious version of it, or can even shut down the host server. 
-			</p>
+				<h2> May 2nd, 2014 </h2>
+				<h2> Recursion, recursion, recursion... </h2>
+					<p> Hey everyone! </p>
+					<p> Well this time I'm going to be trying to explain how recursion works, and why it is useful in programming. It can be a bit hard to grasp how recursion works at first, but with a little practice it becomes more obvious. First, every recursive algorithm has a base case that it works toward, and must eventually reach this base case or else it will go on forever. Here's an example of of a recursive method: </br> </br>
+			
+					<span>def countdown(n) </br>
+					  return if n == 0 </br>
+					  countdown(n-1) </br>
+					end </br> </br>
+					
+					countdown(10)
+					</span>
+					</p>
 
-			<p> In general, SQL injection should not be a problem for many sites because it is rather easy to avoid. Some strategies include parameterized queries, stored procedures, and escaping user input. First, parameterized queries protect databases by defining all SQL logic beforehand, and using parameters to set the different arguments for the SQL, so that even if a hacker tried to inject SQL, it would not work because now the site knows the difference between data and code, no matter what user input is supplied. Next, stored procedures are defined and stored inside the database itself, and then called from the application so that a user cannot alter any SQL statements. Another method for avoiding SQL injection is to escape all user input by using an escaping scheme in your database; this way, the application is able to tell between user input and the SQL statements supplied by the developer. 
-			</p>
+					<p> So for this example, the method definition includes another call to itself but with a parameter one less than the original value. So each time the method is called, it is called with its parameter being one less than it was the last time around. So the output for this program would be: 10,9,8,7,6,5,4,3,2,1 if we had output it to the console. If we had forgotten about changing the parameter in the second call, this method would keep calling itself with the same parameter and it would just keep repeating "10" forever because it is not getting closer to the base case. </p>
 
-			<p> Well, hopefully you guys understand SQL injection a bit better now! Thanks for your time and I'll see you guys in a few weeks for the on-site portion! </p>
+					<p> So in every case, a recursive method must ALWAYS have a base case that will allow the method to exit based on that condition. Much like a loop, without the right conditional exit, it will run forever. Even though this was a very simple example, I feel like it does a good job of illuminating how recursion works on a basic level. Anyways, I hope you guys learned something new! I know I did. </p>
+
+
+			</section>
+			<section id = "blog_content">
+				<h2> April 26th, 2014 </h2>
+				<h2> SQL Injection </h2>
+					<p> Hey guys! </p> </br>
+					<p> Today I'm taking a crack at explaining SQL injection, including what it is, why it is a problem, and how to avoid it. From what I've been reading, it seems as though SQL Injection is a common problem that is easily avoidable, but entirely too common at the same time. First, let me explain what it is. SQL Injection (SQLI) is a database attack that exploits a site or application that uses dynamic queries that utilize user input. SQL injection is the practice of inserting SQL statements through user input, and they can be catastrophic. An attacker can delete/modify/copy contents of a database simply by inserting a harmful SQL statement to the database. Depending on the vulnerability of the site being attacked, a hacker would be able to gain access to sensitive database information, including usernames, passwords, etc... 
+					</p>
+					<p> In terms of difficulty, SQL injection is one of the simplest to perform because of a few key reasons: 1) SQL injection vulnerabilities are extremely common, and hackers find targets by scanning websites for these vulnerabilities, and often choose their targets by the attractiveness of the data contained in the databases. (i.e. usernames, passwords, credit card info, etc...) 2) The hack procedure is well-documented and there are many resources that hackers can use to figure out how to perform an SQL injection. Furthermore, data extraction is not the only danger of an SQL attack, a hacker can actually change lots of site information, including replacing the home screen of a site with a malicious version of it, or can even shut down the host server. 
+					</p>
+
+					<p> In general, SQL injection should not be a problem for many sites because it is rather easy to avoid. Some strategies include parameterized queries, stored procedures, and escaping user input. First, parameterized queries protect databases by defining all SQL logic beforehand, and using parameters to set the different arguments for the SQL, so that even if a hacker tried to inject SQL, it would not work because now the site knows the difference between data and code, no matter what user input is supplied. Next, stored procedures are defined and stored inside the database itself, and then called from the application so that a user cannot alter any SQL statements. Another method for avoiding SQL injection is to escape all user input by using an escaping scheme in your database; this way, the application is able to tell between user input and the SQL statements supplied by the developer. 
+					</p>
+
+					<p> Well, hopefully you guys understand SQL injection a bit better now! Thanks for your time and I'll see you guys in a few weeks for the on-site portion! </p>
 
 			</section>
 			<section id = "blog_content">
